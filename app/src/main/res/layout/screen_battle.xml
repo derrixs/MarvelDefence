@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+ <com.example.marveldefence.ui.BattlefieldView android:id="@+id/battle_map" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/combat_rail_width" android:contentDescription="@string/map_accessibility"/>
+<ScrollView android:id="@+id/upgrade_panel" android:layout_width="@dimen/combat_upgrade_width" android:layout_height="match_parent" android:visibility="gone" android:background="@drawable/combat_panel" android:fillViewport="true">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="6dp">
+  <FrameLayout android:layout_width="match_parent" android:layout_height="60dp" android:background="@drawable/combat_portrait">
+   <FrameLayout android:id="@+id/unit_avatar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="48dp" android:paddingHorizontal="6dp" android:paddingBottom="16dp"/>
+   <androidx.appcompat.widget.AppCompatButton android:id="@+id/unit_profile" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="48dp" android:background="@android:color/transparent" app:backgroundTint="@null" android:contentDescription="@string/hero_details"/>
+   <TextView android:id="@+id/unit_name" style="@style/CombatText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="48dp" android:layout_gravity="bottom" android:gravity="center" android:textSize="12sp" android:paddingHorizontal="6dp" android:paddingBottom="3dp"/>
+   <androidx.appcompat.widget.AppCompatButton android:id="@+id/close_upgrade" style="@style/CombatButton" android:layout_width="48dp" android:layout_height="48dp" android:layout_margin="4dp" android:layout_gravity="top|end" android:text="@string/mission_close_symbol" android:contentDescription="@string/close_panel"/>
+  </FrameLayout>
+  <TextView android:id="@+id/unit_target" style="@style/CombatText" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="26dp" android:gravity="center" android:paddingHorizontal="8dp" android:paddingVertical="3dp" android:textSize="12sp" android:text="@string/combat_target" android:background="@drawable/combat_hud" android:layout_marginTop="2dp"/>
+  <TextView android:id="@+id/unit_stats" style="@style/CombatText" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="24dp" android:gravity="center_vertical" android:textSize="11sp" android:paddingHorizontal="9dp" android:paddingVertical="3dp" android:layout_marginVertical="2dp" android:background="@drawable/combat_hud"/>
+  <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="68dp" android:background="@drawable/combat_upgrade_card">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="6dp">
+  <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/combat_energy" android:contentDescription="@null"/>
+  <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="6dp" android:orientation="vertical">
+   <TextView style="@style/CombatUpgradeTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/combat_damage_title" android:importantForAccessibility="no"/>
+   <LinearLayout android:id="@+id/damage_level" android:layout_width="wrap_content" android:layout_height="16dp" android:orientation="horizontal" android:paddingVertical="2dp" android:layout_marginTop="2dp" android:importantForAccessibility="noHideDescendants"/>
+   <TextView android:id="@+id/damage_price" style="@style/CombatPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="28dp" android:layout_marginTop="2dp" android:importantForAccessibility="no"/>
+  </LinearLayout>
+ </LinearLayout>
+ <androidx.appcompat.widget.AppCompatButton android:id="@+id/upgrade_damage" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="48dp" android:background="@android:color/transparent" app:backgroundTint="@null"/>
+</FrameLayout>
+  <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="68dp" android:layout_marginTop="4dp" android:background="@drawable/combat_upgrade_card">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="6dp">
+  <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/combat_range" android:contentDescription="@null"/>
+  <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="6dp" android:orientation="vertical">
+   <TextView style="@style/CombatUpgradeTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/combat_range_title" android:importantForAccessibility="no"/>
+   <LinearLayout android:id="@+id/range_level" android:layout_width="wrap_content" android:layout_height="16dp" android:orientation="horizontal" android:paddingVertical="2dp" android:layout_marginTop="2dp" android:importantForAccessibility="noHideDescendants"/>
+   <TextView android:id="@+id/range_price" style="@style/CombatPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="28dp" android:layout_marginTop="2dp" android:importantForAccessibility="no"/>
+  </LinearLayout>
+ </LinearLayout>
+ <androidx.appcompat.widget.AppCompatButton android:id="@+id/upgrade_range" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="48dp" android:background="@android:color/transparent" app:backgroundTint="@null"/>
+</FrameLayout>
+  <androidx.appcompat.widget.AppCompatButton android:id="@+id/sell_unit" style="@style/CombatButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="4dp" android:background="@drawable/combat_button_red" app:backgroundTint="@null"/>
+ </LinearLayout>
+</ScrollView> <LinearLayout android:id="@+id/battle_hud" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="42dp" android:layout_gravity="top" android:layout_marginEnd="@dimen/combat_rail_width" android:orientation="horizontal" android:gravity="center_vertical" android:paddingHorizontal="6dp" android:paddingVertical="3dp" android:baselineAligned="false">
+  <LinearLayout android:id="@+id/battle_counters" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:baselineAligned="false">
+  <TextView android:id="@+id/lives" app:drawableStartCompat="@drawable/combat_heart" android:drawablePadding="5dp" style="@style/CombatHud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36dp"/>
+  <TextView android:id="@+id/credits" app:drawableStartCompat="@drawable/combat_coin" android:drawablePadding="5dp" style="@style/CombatHud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36dp" android:layout_marginStart="6dp"/>
+  </LinearLayout>
+  <Space android:id="@+id/hud_spacer" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+  <TextView android:id="@+id/wave" style="@style/CombatHud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36dp" android:layout_marginStart="6dp" android:textSize="13sp"/>
+ </LinearLayout>
+ <TextView android:id="@+id/battle_hint" style="@style/CombatText" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="24dp" android:layout_gravity="bottom" android:layout_marginEnd="112dp" android:gravity="center" android:padding="4dp" android:maxLines="2" android:background="#A80C2745" android:textSize="11sp" android:text="@string/ready_hint"/>
+<LinearLayout android:layout_gravity="end" android:layout_width="@dimen/combat_rail_width" android:layout_height="match_parent" android:orientation="vertical" android:padding="6dp" android:background="@drawable/combat_panel">
+ <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginBottom="104dp" android:scrollbars="none">
+  <LinearLayout android:id="@+id/battle_heroes" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+ </ScrollView>
+</LinearLayout>
+<LinearLayout android:id="@+id/placement_actions" android:layout_width="112dp" android:layout_height="wrap_content" android:layout_gravity="bottom|end" android:layout_marginBottom="110dp" android:padding="6dp" android:orientation="vertical" android:visibility="gone" android:background="@drawable/combat_panel">
+ <androidx.appcompat.widget.AppCompatButton android:id="@+id/confirm_placement" style="@style/CombatButton" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/confirm" android:background="@drawable/combat_button_green" app:backgroundTint="@null"/>
+ <androidx.appcompat.widget.AppCompatButton android:id="@+id/cancel_placement" style="@style/CombatButton" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="4dp" android:text="@string/cancel"/>
+</LinearLayout>
+<LinearLayout android:layout_gravity="bottom|end" android:layout_width="112dp" android:layout_height="wrap_content" android:orientation="vertical" android:padding="6dp">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="48dp" android:orientation="horizontal" android:baselineAligned="false">
+  <androidx.appcompat.widget.AppCompatButton android:id="@+id/start_wave" style="@style/CombatButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@drawable/combat_button_green" app:backgroundTint="@null" android:text="@string/combat_play" android:textSize="25sp" android:contentDescription="@string/start_wave"/>
+  <androidx.appcompat.widget.AppCompatButton android:id="@+id/pause_button" style="@style/CombatButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="4dp" android:background="@drawable/combat_button_red" app:backgroundTint="@null" android:text="@string/combat_pause" android:textSize="25sp" android:contentDescription="@string/pause"/>
+ </LinearLayout>
+ <LinearLayout android:layout_width="match_parent" android:layout_height="48dp" android:orientation="horizontal" android:baselineAligned="false" android:layout_marginTop="4dp">
+  <androidx.appcompat.widget.AppCompatButton android:id="@+id/battle_back" style="@style/CombatButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="@string/combat_exit" android:contentDescription="@string/menu"/>
+  <androidx.appcompat.widget.AppCompatButton android:id="@+id/speed_button" style="@style/CombatButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="4dp" android:text="@string/speed_normal" />
+ </LinearLayout>
+</LinearLayout></FrameLayout>

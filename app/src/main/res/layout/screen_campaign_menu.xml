@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.example.marveldefence.ui.CampaignPager android:id="@+id/campaign_pager"
+        android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/campaign_previous_preview"
+        android:layout_width="16dp" android:layout_height="match_parent" android:layout_gravity="start"
+        android:scaleType="centerCrop" android:importantForAccessibility="no" android:visibility="invisible"/>
+    <ImageView android:id="@+id/campaign_next_preview"
+        android:layout_width="16dp" android:layout_height="match_parent" android:layout_gravity="end"
+        android:scaleType="centerCrop" android:importantForAccessibility="no" android:visibility="invisible"/>
+    <com.example.marveldefence.ui.SwipeSafeButton android:id="@+id/campaign_platform"
+        android:layout_width="56dp" android:layout_height="56dp" android:visibility="invisible"
+        android:background="@drawable/mission_platform_touch" app:backgroundTint="@null"
+        android:contentDescription="@string/platform_mission"/>
+    <FrameLayout android:id="@+id/campaign_controls" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/campaign_indicator" style="@style/DefenceLabel"
+            android:layout_width="wrap_content" android:layout_height="28dp"
+            android:layout_gravity="top|center_horizontal" android:layout_marginTop="12dp"
+            android:paddingHorizontal="12dp" android:gravity="center" android:background="@drawable/campaign_indicator"
+            android:accessibilityLiveRegion="polite"/>
+        <TextView android:id="@+id/campaign_coming_soon" style="@style/DefenceText"
+            android:layout_width="220dp" android:layout_height="48dp"
+            android:layout_gravity="top|end" android:layout_marginTop="12dp" android:layout_marginEnd="24dp"
+            android:gravity="center" android:background="@drawable/panel" android:text="@string/campaign_coming_soon"
+            android:textColor="#C4BDA8" android:textStyle="bold" android:visibility="gone"/>
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/campaign_previous"
+            android:layout_width="48dp" android:layout_height="48dp"
+            android:layout_gravity="start|bottom" android:layout_margin="24dp"
+            android:background="@drawable/panel" android:padding="14dp" app:tint="#D6E4DB"
+            android:src="@drawable/campaign_arrow_left" android:contentDescription="@string/campaign_previous"/>
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/campaign_next"
+            android:layout_width="48dp" android:layout_height="48dp"
+            android:layout_gravity="end|bottom" android:layout_margin="24dp"
+            android:background="@drawable/panel" android:padding="14dp" app:tint="#D6E4DB"
+            android:src="@drawable/campaign_arrow_right" android:contentDescription="@string/campaign_next"/>
+    </FrameLayout>
+</FrameLayout>

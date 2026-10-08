@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:state_enabled="false"><shape><solid android:color="#29496E"/><stroke android:width="2dp" android:color="#658296"/><corners android:radius="9dp"/></shape></item>
+ <item android:state_selected="true"><shape><solid android:color="#075688"/><stroke android:width="3dp" android:color="#6AFFA0"/><corners android:radius="9dp"/></shape></item>
+ <item android:state_activated="true"><shape><solid android:color="#073A70"/><stroke android:width="3dp" android:color="#FFD65E"/><corners android:radius="9dp"/></shape></item>
+ <item android:drawable="@drawable/combat_card_surface"/>
+</selector>

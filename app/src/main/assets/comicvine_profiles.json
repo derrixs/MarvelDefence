@@ -1,0 +1,907 @@
+{
+  "iron_man": {
+    "deck": "Tony Stark was the arrogant son of wealthy, weapon manufacturer Howard Stark. Tony cared only about himself, but he would have a change of heart after he was kidnapped by terrorists and gravely injured. Pressured to create a weapon of mass destruction, Stark instead created a suit of armor powerful enough for him to escape. Tony used his vast resources and intellect to make the world a better place as The Invincible Iron Man. Stark's super hero identity led him to become a founding member of the Avengers.",
+    "id": 1455,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11174/111743204/9372918-invincibleironman%231vol5kaelngu.jpg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11174/111743204/9372918-invincibleironman%231vol5kaelngu.jpg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11174/111743204/9372918-invincibleironman%231vol5kaelngu.jpg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11174/111743204/9372918-invincibleironman%231vol5kaelngu.jpg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11174/111743204/9372918-invincibleironman%231vol5kaelngu.jpg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11174/111743204/9372918-invincibleironman%231vol5kaelngu.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11174/111743204/9372918-invincibleironman%231vol5kaelngu.jpg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11174/111743204/9372918-invincibleironman%231vol5kaelngu.jpg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/11174/111743204/9372918-invincibleironman%231vol5kaelngu.jpg",
+      "image_tags": "All Images"
+    },
+    "name": "Iron Man",
+    "powers": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-1/",
+        "id": 1,
+        "name": "Flight"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-2/",
+        "id": 2,
+        "name": "Super Strength"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-3/",
+        "id": 3,
+        "name": "Super Speed"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-5/",
+        "id": 5,
+        "name": "Stamina"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-6/",
+        "id": 6,
+        "name": "Invulnerability"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-9/",
+        "id": 9,
+        "name": "Intellect"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-11/",
+        "id": 11,
+        "name": "Radar Sense"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-13/",
+        "id": 13,
+        "name": "Force Field"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-14/",
+        "id": 14,
+        "name": "Blast Power"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-15/",
+        "id": 15,
+        "name": "Healing"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-17/",
+        "id": 17,
+        "name": "Weapon Master"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-25/",
+        "id": 25,
+        "name": "Magnetism"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-27/",
+        "id": 27,
+        "name": "Implants"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-29/",
+        "id": 29,
+        "name": "Psionic"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-30/",
+        "id": 30,
+        "name": "Insanely Rich"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-31/",
+        "id": 31,
+        "name": "Power Suit"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-34/",
+        "id": 34,
+        "name": "Unarmed Combat"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-35/",
+        "id": 35,
+        "name": "Gadgets"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-51/",
+        "id": 51,
+        "name": "Electricity Control"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-53/",
+        "id": 53,
+        "name": "Sub-Mariner"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-59/",
+        "id": 59,
+        "name": "Tracking"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-67/",
+        "id": 67,
+        "name": "Electronic interaction"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-73/",
+        "id": 73,
+        "name": "Technopathy"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-75/",
+        "id": 75,
+        "name": "Light Projection"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-76/",
+        "id": 76,
+        "name": "Holographic Projection"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-92/",
+        "id": 92,
+        "name": "Energy Shield"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-120/",
+        "id": 120,
+        "name": "Energy Absorption"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-126/",
+        "id": 126,
+        "name": "Heat Generation"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-132/",
+        "id": 132,
+        "name": "Stealth"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-135/",
+        "id": 135,
+        "name": "Leadership"
+      }
+    ],
+    "publisher": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-31/",
+      "id": 31,
+      "name": "Marvel"
+    },
+    "site_detail_url": "https://comicvine.gamespot.com/iron-man/4005-1455/"
+  },
+  "spider_man": {
+    "deck": "Peter Parker was bitten by a radioactive spider as a teenager, granting him spider-like powers. After the death of his Uncle Ben, Peter learned that \"with great power, comes great responsibility.\" Swearing to always protect the innocent from harm, Peter Parker became Spider-Man.",
+    "id": 1443,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
+      "image_tags": "All Images"
+    },
+    "name": "Spider-Man",
+    "powers": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-2/",
+        "id": 2,
+        "name": "Super Strength"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-3/",
+        "id": 3,
+        "name": "Super Speed"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-4/",
+        "id": 4,
+        "name": "Agility"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-5/",
+        "id": 5,
+        "name": "Stamina"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-9/",
+        "id": 9,
+        "name": "Intellect"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-15/",
+        "id": 15,
+        "name": "Healing"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-28/",
+        "id": 28,
+        "name": "Feral"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-35/",
+        "id": 35,
+        "name": "Gadgets"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-38/",
+        "id": 38,
+        "name": "Siphon Abilities"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-54/",
+        "id": 54,
+        "name": "Wall Clinger"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-61/",
+        "id": 61,
+        "name": "Danger Sense"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-133/",
+        "id": 133,
+        "name": "Berserker Strength"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-138/",
+        "id": 138,
+        "name": "Webslinger"
+      }
+    ],
+    "publisher": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-31/",
+      "id": 31,
+      "name": "Marvel"
+    },
+    "site_detail_url": "https://comicvine.gamespot.com/spider-man/4005-1443/"
+  },
+  "hulk": {
+    "deck": "After being bombarded with a massive dose of gamma radiation while saving a young man's life during an experimental bomb testing, Dr. Robert Bruce Banner was transformed into the Incredible Hulk: a green behemoth who is the living personification of rage and pure physical strength.",
+    "id": 2267,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/1/15776/9971293-hulk.jpg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/1/15776/9971293-hulk.jpg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/1/15776/9971293-hulk.jpg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/1/15776/9971293-hulk.jpg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/1/15776/9971293-hulk.jpg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/1/15776/9971293-hulk.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/1/15776/9971293-hulk.jpg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/1/15776/9971293-hulk.jpg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/1/15776/9971293-hulk.jpg",
+      "image_tags": "All Images,Earth-616 Hulk"
+    },
+    "name": "Hulk",
+    "powers": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-2/",
+        "id": 2,
+        "name": "Super Strength"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-3/",
+        "id": 3,
+        "name": "Super Speed"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-4/",
+        "id": 4,
+        "name": "Agility"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-5/",
+        "id": 5,
+        "name": "Stamina"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-6/",
+        "id": 6,
+        "name": "Invulnerability"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-9/",
+        "id": 9,
+        "name": "Intellect"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-14/",
+        "id": 14,
+        "name": "Blast Power"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-15/",
+        "id": 15,
+        "name": "Healing"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-17/",
+        "id": 17,
+        "name": "Weapon Master"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-18/",
+        "id": 18,
+        "name": "Super Sight"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-24/",
+        "id": 24,
+        "name": "Shape Shifter"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-32/",
+        "id": 32,
+        "name": "Radiation"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-34/",
+        "id": 34,
+        "name": "Unarmed Combat"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-35/",
+        "id": 35,
+        "name": "Gadgets"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-40/",
+        "id": 40,
+        "name": "Immortal"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-59/",
+        "id": 59,
+        "name": "Tracking"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-66/",
+        "id": 66,
+        "name": "Adaptive"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-120/",
+        "id": 120,
+        "name": "Energy Absorption"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-133/",
+        "id": 133,
+        "name": "Berserker Strength"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-136/",
+        "id": 136,
+        "name": "Longevity"
+      }
+    ],
+    "publisher": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-31/",
+      "id": 31,
+      "name": "Marvel"
+    },
+    "site_detail_url": "https://comicvine.gamespot.com/hulk/4005-2267/"
+  },
+  "thor": {
+    "deck": "Thor Odinson is the All-father of Asgard /God of Thunder, offspring of All-Father Odin & Elder-Goddess Gaea. Combining the powers of both realms makes him an elder-god hybrid and a being of no perceivable limits. Armed with his enchanted Uru hammer Mjolnir which helps him to channel his godly energies. The mightiest and the most beloved warrior in all of Asgard, a staunch ally for good and one of the most powerful beings in the multiverse/omniverse. Thor is also a founding member of the Avengers.",
+    "id": 2268,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11156/111564182/10173044-immortal_thor_vol_1_1_manapul_variant_textless.jpg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11156/111564182/10173044-immortal_thor_vol_1_1_manapul_variant_textless.jpg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11156/111564182/10173044-immortal_thor_vol_1_1_manapul_variant_textless.jpg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11156/111564182/10173044-immortal_thor_vol_1_1_manapul_variant_textless.jpg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11156/111564182/10173044-immortal_thor_vol_1_1_manapul_variant_textless.jpg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111564182/10173044-immortal_thor_vol_1_1_manapul_variant_textless.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11156/111564182/10173044-immortal_thor_vol_1_1_manapul_variant_textless.jpg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11156/111564182/10173044-immortal_thor_vol_1_1_manapul_variant_textless.jpg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/11156/111564182/10173044-immortal_thor_vol_1_1_manapul_variant_textless.jpg",
+      "image_tags": "All Images"
+    },
+    "name": "Thor",
+    "powers": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-1/",
+        "id": 1,
+        "name": "Flight"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-2/",
+        "id": 2,
+        "name": "Super Strength"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-3/",
+        "id": 3,
+        "name": "Super Speed"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-4/",
+        "id": 4,
+        "name": "Agility"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-5/",
+        "id": 5,
+        "name": "Stamina"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-6/",
+        "id": 6,
+        "name": "Invulnerability"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-10/",
+        "id": 10,
+        "name": "Teleport"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-13/",
+        "id": 13,
+        "name": "Force Field"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-14/",
+        "id": 14,
+        "name": "Blast Power"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-15/",
+        "id": 15,
+        "name": "Healing"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-16/",
+        "id": 16,
+        "name": "Magic"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-17/",
+        "id": 17,
+        "name": "Weapon Master"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-18/",
+        "id": 18,
+        "name": "Super Sight"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-19/",
+        "id": 19,
+        "name": "Super Smell"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-20/",
+        "id": 20,
+        "name": "Super Hearing"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-22/",
+        "id": 22,
+        "name": "Phasing / Ghost"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-25/",
+        "id": 25,
+        "name": "Magnetism"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-34/",
+        "id": 34,
+        "name": "Unarmed Combat"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-36/",
+        "id": 36,
+        "name": "Weather Control"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-37/",
+        "id": 37,
+        "name": "Divine Powers"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-40/",
+        "id": 40,
+        "name": "Immortal"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-49/",
+        "id": 49,
+        "name": "Necromancy"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-51/",
+        "id": 51,
+        "name": "Electricity Control"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-53/",
+        "id": 53,
+        "name": "Sub-Mariner"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-55/",
+        "id": 55,
+        "name": "Mesmerize"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-60/",
+        "id": 60,
+        "name": "Astral Projection"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-61/",
+        "id": 61,
+        "name": "Danger Sense"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-66/",
+        "id": 66,
+        "name": "Adaptive"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-67/",
+        "id": 67,
+        "name": "Electronic interaction"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-68/",
+        "id": 68,
+        "name": "Animation"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-72/",
+        "id": 72,
+        "name": "Energy-Enhanced Strike"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-75/",
+        "id": 75,
+        "name": "Light Projection"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-77/",
+        "id": 77,
+        "name": "Reality Manpulation"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-79/",
+        "id": 79,
+        "name": "Electronic Disruption"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-81/",
+        "id": 81,
+        "name": "Soul Absorption"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-85/",
+        "id": 85,
+        "name": "Dimensional Manipulation"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-89/",
+        "id": 89,
+        "name": "Omni-lingual"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-92/",
+        "id": 92,
+        "name": "Energy Shield"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-94/",
+        "id": 94,
+        "name": "Siphon Lifeforce"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-95/",
+        "id": 95,
+        "name": "Sense Death"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-96/",
+        "id": 96,
+        "name": "Darkforce Manipulation"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-97/",
+        "id": 97,
+        "name": "Vibration Wave"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-99/",
+        "id": 99,
+        "name": "Empathy"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-102/",
+        "id": 102,
+        "name": "Illusion Casting"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-105/",
+        "id": 105,
+        "name": "Wind Bursts"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-107/",
+        "id": 107,
+        "name": "Earth Manipulation"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-108/",
+        "id": 108,
+        "name": "Marksmanship"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-111/",
+        "id": 111,
+        "name": "Power Item"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-115/",
+        "id": 115,
+        "name": "Hypnosis"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-118/",
+        "id": 118,
+        "name": "Water Control"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-120/",
+        "id": 120,
+        "name": "Energy Absorption"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-123/",
+        "id": 123,
+        "name": "Energy Manipulation"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-124/",
+        "id": 124,
+        "name": "Cosmic Awareness"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-131/",
+        "id": 131,
+        "name": "Chemical Absorbtion"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-133/",
+        "id": 133,
+        "name": "Berserker Strength"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-135/",
+        "id": 135,
+        "name": "Leadership"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-136/",
+        "id": 136,
+        "name": "Longevity"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-139/",
+        "id": 139,
+        "name": "Ice Breath"
+      }
+    ],
+    "publisher": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-31/",
+      "id": 31,
+      "name": "Marvel"
+    },
+    "site_detail_url": "https://comicvine.gamespot.com/thor/4005-2268/"
+  },
+  "captain": {
+    "deck": "During World War II, Steve Rogers volunteered to receive the experimental Super-Soldier Serum. Enhanced to the pinnacle of human physical potential and armed with an unbreakable shield, he became Captain America. After a failed mission left him encased in ice for decades, he was found and revived by the Avengers, later joining their ranks and eventually becoming the team's leader.",
+    "id": 1442,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/12/124259/8459983-rco031_1650495781.jpg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/12/124259/8459983-rco031_1650495781.jpg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/12/124259/8459983-rco031_1650495781.jpg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/12/124259/8459983-rco031_1650495781.jpg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/12/124259/8459983-rco031_1650495781.jpg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/12/124259/8459983-rco031_1650495781.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/12/124259/8459983-rco031_1650495781.jpg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/12/124259/8459983-rco031_1650495781.jpg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/12/124259/8459983-rco031_1650495781.jpg",
+      "image_tags": "All Images"
+    },
+    "name": "Captain America",
+    "powers": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-2/",
+        "id": 2,
+        "name": "Super Strength"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-4/",
+        "id": 4,
+        "name": "Agility"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-5/",
+        "id": 5,
+        "name": "Stamina"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-9/",
+        "id": 9,
+        "name": "Intellect"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-15/",
+        "id": 15,
+        "name": "Healing"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-17/",
+        "id": 17,
+        "name": "Weapon Master"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-34/",
+        "id": 34,
+        "name": "Unarmed Combat"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-35/",
+        "id": 35,
+        "name": "Gadgets"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-54/",
+        "id": 54,
+        "name": "Wall Clinger"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-58/",
+        "id": 58,
+        "name": "Escape Artist"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-59/",
+        "id": 59,
+        "name": "Tracking"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-66/",
+        "id": 66,
+        "name": "Adaptive"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-78/",
+        "id": 78,
+        "name": "Swordsmanship"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-92/",
+        "id": 92,
+        "name": "Energy Shield"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-108/",
+        "id": 108,
+        "name": "Marksmanship"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-132/",
+        "id": 132,
+        "name": "Stealth"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-135/",
+        "id": 135,
+        "name": "Leadership"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-136/",
+        "id": 136,
+        "name": "Longevity"
+      }
+    ],
+    "publisher": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-31/",
+      "id": 31,
+      "name": "Marvel"
+    },
+    "site_detail_url": "https://comicvine.gamespot.com/captain-america/4005-1442/"
+  },
+  "widow": {
+    "deck": "Former KGB agent Natalia Alianovna Romanova, known as the Black Widow Natasha Romanoff, was trained by the top-secret Soviet brainwashing and training program the Red Room to become the ultimate \"Super-Spy\". She defected from the Soviet Union to the US, joining S.H.I.E.L.D., and later Black Widow became a long-standing member of The Avengers. She is a woman with an enigmatic past and red in her ledger.",
+    "id": 3200,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11156/111564182/9646599-widow2.jpg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11156/111564182/9646599-widow2.jpg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11156/111564182/9646599-widow2.jpg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11156/111564182/9646599-widow2.jpg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11156/111564182/9646599-widow2.jpg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111564182/9646599-widow2.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11156/111564182/9646599-widow2.jpg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11156/111564182/9646599-widow2.jpg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/11156/111564182/9646599-widow2.jpg",
+      "image_tags": "All Images"
+    },
+    "name": "Black Widow",
+    "powers": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-4/",
+        "id": 4,
+        "name": "Agility"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-5/",
+        "id": 5,
+        "name": "Stamina"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-9/",
+        "id": 9,
+        "name": "Intellect"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-17/",
+        "id": 17,
+        "name": "Weapon Master"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-34/",
+        "id": 34,
+        "name": "Unarmed Combat"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-35/",
+        "id": 35,
+        "name": "Gadgets"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-58/",
+        "id": 58,
+        "name": "Escape Artist"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-59/",
+        "id": 59,
+        "name": "Tracking"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-108/",
+        "id": 108,
+        "name": "Marksmanship"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-132/",
+        "id": 132,
+        "name": "Stealth"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-135/",
+        "id": 135,
+        "name": "Leadership"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-136/",
+        "id": 136,
+        "name": "Longevity"
+      }
+    ],
+    "publisher": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-31/",
+      "id": 31,
+      "name": "Marvel"
+    },
+    "site_detail_url": "https://comicvine.gamespot.com/black-widow/4005-3200/"
+  }
+}

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="combat_rail_width">80dp</dimen>
+    <dimen name="combat_upgrade_width">208dp</dimen>
+</resources>
