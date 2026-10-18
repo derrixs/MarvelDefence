@@ -9,7 +9,7 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import com.example.marveldefence.R;
 
-/** Decorative layers only. Caller applies the exact background transform and alpha. */
+/** Apenas camadas decorativas. O chamador aplica a transformação do fundo e a transparência exatas. */
 final class EnvironmentRenderer {
     private final EnvironmentScene scene;
     private final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG);
@@ -30,7 +30,7 @@ final class EnvironmentRenderer {
         c.save(); c.clipPath(scene.water);
         paint.setColor(0xffb9f4ff); paint.setAlpha(EnvironmentScene.WATER_ALPHA);
         paint.setStyle(Paint.Style.STROKE); paint.setStrokeWidth(2);
-        // Stable grid, small drift and phase changes; clipped before any drawing.
+        // Grade estável com pequenos deslocamentos e mudanças de fase; recortada antes de desenhar.
         for (int row=0;row<EnvironmentScene.WAVE_ROWS;row++) for (int column=0;column<EnvironmentScene.WAVE_COLUMNS;column++) {
             float x = column*64 + (row%2)*27;
             float y = row*53 + 12;
@@ -52,7 +52,7 @@ final class EnvironmentRenderer {
         c.save(); c.clipPath(scene.clouds);
         paint.setStyle(Paint.Style.FILL); paint.setColor(0xffffffff); paint.setAlpha(EnvironmentScene.CLOUD_ALPHA);
         for (int i=0;i<EnvironmentScene.CLOUD_COUNT;i++) {
-            // The wrap occurs outside the source image. Clipping protects all information.
+            // O retorno ao início ocorre fora da imagem original. O recorte preserva seu conteúdo.
             float x = (float)(((seconds/EnvironmentScene.CLOUD_PERIOD+i*.5)%1)*1972-150);
             float y = i==0 ? scene.cloudHeight : 870;
             c.save(); c.translate(x,y); c.scale(1.15f,.7f); c.drawPath(cloud,paint); c.restore();
@@ -62,7 +62,7 @@ final class EnvironmentRenderer {
     private void drawBoats(Canvas c,double seconds) {
         for (int i=0;i<boats.length;i++) {
             double phase = seconds*Math.PI*2/EnvironmentScene.BOAT_PERIOD+i*Math.PI;
-            // Full sprite bounds stay in the lower exterior river, clear of pier/plaque.
+            // Os sprites permanecem inteiros no rio exterior inferior, longe do píer e da placa.
             float[] loop = EnvironmentScene.BOAT_LOOPS[i];
             float x = loop[0]+(float)Math.cos(phase)*EnvironmentScene.BOAT_DRIFT_X;
             float bottom = loop[1]+(float)Math.sin(phase)*EnvironmentScene.BOAT_DRIFT_Y;

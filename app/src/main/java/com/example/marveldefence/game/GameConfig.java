@@ -1,6 +1,6 @@
 package com.example.marveldefence.game;
 
-/** All numbers here are provisional prototype rules. */
+/** Todos os valores numéricos aqui são regras provisórias do protótipo. */
 public final class GameConfig {
     public static final int TEAM_LIMIT = 3, INITIAL_LIVES = 100, INITIAL_CREDITS = 1000;
     public static final int WAVE_BONUS = 100, UPGRADE_LIMIT = 3;

@@ -1,13 +1,13 @@
 package com.example.marveldefence.game;
 
-/** Uniform world/screen transform shared by drawing and input. */
+/** Transformação uniforme entre mapa e tela, compartilhada pelo desenho e pelos toques. */
 public final class Viewport {
     public double scale = 1, left, top;
     public void fit(double screenWidth, double screenHeight, double worldWidth, double worldHeight) {
         scale = Math.max(.0001, Math.min(screenWidth/worldWidth, screenHeight/worldHeight));
         left = (screenWidth-worldWidth*scale)/2; top = (screenHeight-worldHeight*scale)/2;
     }
-    /** Uniform fill for the battle background; decorative edges may leave the screen. */
+    /** Preenche o fundo do combate sem deformar; as bordas decorativas podem ficar fora da tela. */
     public void cover(double screenWidth,double screenHeight,double worldWidth,double worldHeight) {
         scale = Math.max(.0001,Math.max(screenWidth/worldWidth,screenHeight/worldHeight));
         left = (screenWidth-worldWidth*scale)/2; top = (screenHeight-worldHeight*scale)/2;

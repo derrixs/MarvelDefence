@@ -1,5 +1,9 @@
 # Validação
 
+## Tradução dos comentários — 18/10/2026
+
+O diff foi inspecionado e contém alterações de comentários, além de normalização de quebra de linha ao fim de alguns arquivos; `git diff --check` não apontou erros. O build debug e os testes do motor foram iniciados com o comando offline e o fallback de JVM documentado no README, mas não produziram saída após mais de dois minutos e foram interrompidos. `java -version` também não produziu saída neste ambiente. Portanto, build e testes não estão verificados nesta alteração. As mudanças preexistentes em `.idea` foram preservadas.
+
 ## Logo, capa e ícone — 07/10/2026
 
 Executado `:app:assembleDebug :app:testDebugUnitTest :app:lintDebug --offline --no-daemon --console=plain` com o fallback JVM documentado: BUILD SUCCESSFUL. Relatórios JUnit: 16 testes GameEngineTest e 1 ExampleUnitTest, zero falhas/erros. Lint: 0 erros e 9 avisos. O build confirma recursos e código compiláveis; os testes do motor não verificam aparência da capa ou do ícone. APK debug gerado em app/build/outputs/apk/debug/app-debug.apk.

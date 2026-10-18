@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/** Editable demo balance. Comic Vine metadata never changes these combat values. */
+/** Balanceamento provisório editável. Os metadados da Comic Vine não alteram estes valores de combate. */
 public final class HeroCatalog {
     public enum Attack { SINGLE, AREA, SLOW }
     public static final class Hero {

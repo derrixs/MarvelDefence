@@ -20,7 +20,7 @@ import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/** Identity metadata only. Explicit refresh, one worker, cached responses, no combat dependency. */
+/** Apenas metadados de identidade. Atualização manual, uma fila, cache e nenhuma dependência do combate. */
 public final class ComicVineRepository {
     public static final class Profile {
         public final String name, description, imageUrl, sourceUrl;
@@ -50,18 +50,18 @@ public final class ComicVineRepository {
     private boolean loading, closed;
     public ComicVineRepository(Context context) {
         this.context = context.getApplicationContext();
-        // Bundled records are real Comic Vine responses, fetched for this prototype.
+        // Os registros incluídos são respostas reais da Comic Vine, obtidas para este protótipo.
         try (InputStream input = context.getAssets().open("comicvine_profiles.json")) {
             JSONObject data = new JSONObject(read(input));
             for (HeroCatalog.Hero hero : HeroCatalog.ALL) {
                 JSONObject record = data.optJSONObject(hero.id);
                 if (record != null) profiles.put(hero.id, new Profile(record));
             }
-        } catch (Exception ignored) { /* Missing catalog stays explicitly unavailable. */ }
+        } catch (Exception ignored) { /* Se o catálogo faltar, os dados permanecem indisponíveis. */ }
         for (HeroCatalog.Hero hero : HeroCatalog.ALL) {
             String cached = this.context.getSharedPreferences("comicvine",Context.MODE_PRIVATE).getString(hero.id, "");
             if (!cached.isEmpty()) try { profiles.put(hero.id,new Profile(new JSONObject(cached))); }
-            catch (Exception ignored) { /* Keep bundled record if cache is corrupt. */ }
+            catch (Exception ignored) { /* Mantém o registro incluído se o cache estiver corrompido. */ }
         }
     }
     public Profile profile(String id) { return profiles.get(id); }
@@ -70,7 +70,7 @@ public final class ComicVineRepository {
     public boolean refresh(Callback callback) {
         long now = System.currentTimeMillis();
         long lastAttempt = context.getSharedPreferences("comicvine",Context.MODE_PRIVATE).getLong("last_attempt",0);
-        // Six records per refresh; two minutes keeps this client below 200 detail requests/hour.
+        // São seis registros por atualização; o intervalo de dois minutos limita a menos de 200 consultas por hora.
         if (closed || loading || !hasKey() || now-lastAttempt < 120000 && lastAttempt != 0) return false;
         loading = true;
         context.getSharedPreferences("comicvine",Context.MODE_PRIVATE).edit().putLong("last_attempt",now).apply();
@@ -81,13 +81,13 @@ public final class ComicVineRepository {
                 if (Thread.currentThread().isInterrupted()) return;
                 try {
                     JSONObject result = fetch(hero.comicVineId);
-                    // Every playable identity is fixed and publisher-checked, not search-selected.
+                    // Cada identidade jogável é fixa e tem a editora conferida; não é escolhida por busca.
                     if (result.optInt("id") != hero.comicVineId || result.optString("name").isEmpty()) throw new Exception("Identity");
                     JSONObject publisher = result.optJSONObject("publisher");
                     if (publisher == null || !publisher.optString("name").startsWith("Marvel")) throw new Exception("Publisher");
                     updated.put(hero.id,new Profile(result));
                     context.getSharedPreferences("comicvine",Context.MODE_PRIVATE).edit().putString(hero.id,result.toString()).apply();
-                } catch (Exception ignored) { failures++; /* Never log authenticated URLs. */ }
+                } catch (Exception ignored) { failures++; /* Nunca registra URLs com autenticação nos logs. */ }
                 try { Thread.sleep(1100); } catch (InterruptedException interrupted) { Thread.currentThread().interrupt(); return; }
             }
             final int failed = failures;

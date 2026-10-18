@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/** Geometry traced in pixels over manhattan_map.png, then scaled uniformly into game units. */
+/** Geometria traçada em pixels sobre manhattan_map.png e convertida uniformemente para unidades do jogo. */
 public final class MapData {
     public static final double IMAGE_WIDTH = 1672, IMAGE_HEIGHT = 941;
     private static final double PIXEL_SCALE = 1000 / IMAGE_WIDTH;
@@ -20,7 +20,7 @@ public final class MapData {
             this.x = x; this.y = y; this.radius = radius; this.kind = kind;
         }
     }
-    /** Blocks the whole hero footprint, including polygon edges and concave water boundaries. */
+    /** Bloqueia toda a área ocupada pelo herói, inclusive bordas de polígonos e limites côncavos da água. */
     public static final class BlockedArea {
         public final String kind;
         public final List<Point> vertices;
@@ -70,7 +70,7 @@ public final class MapData {
                 area("dock",469,883,511,869,567,905,550,941,497,941)));
     }
 
-    /** Explicit geometry also allows future maps and deterministic engine fixtures. */
+    /** A geometria explícita também permite mapas futuros e cenários determinísticos nos testes do motor. */
     public MapData(double width, double height, double pathWidth, List<Point> path,
                    List<Obstacle> obstacles, List<BlockedArea> blockedAreas) {
         this.width = width; this.height = height; this.pathWidth = pathWidth;
@@ -85,7 +85,7 @@ public final class MapData {
     private static List<Point> towerRoute() {
         List<Point> points = new ArrayList<>();
         points.add(pixel(148,287));
-        // Cubic control points follow the road center: portal, lower loop, upper loop, tower door.
+        // Os pontos de controle das curvas seguem o centro da rua: portal, volta inferior, volta superior e porta da torre.
         curve(points,185,335,255,326,345,333);
         curve(points,465,333,456,407,454,466);
         curve(points,450,563,498,629,650,638);

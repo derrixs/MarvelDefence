@@ -6,7 +6,7 @@ import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import androidx.appcompat.widget.AppCompatButton;
 
-/** A native button whose click is cancelled when a press becomes a drag. */
+/** Botão nativo cujo clique é cancelado quando o toque vira um arrasto. */
 public final class SwipeSafeButton extends AppCompatButton {
     private final int touchSlop;
     private float downX, downY;
@@ -31,7 +31,7 @@ public final class SwipeSafeButton extends AppCompatButton {
             super.onTouchEvent(cancel); cancel.recycle();
         }
         if (!dragged && event.getActionMasked()==MotionEvent.ACTION_UP) {
-            // ScrollView delays the pressed state; a quick tap can end before it is set.
+            // A ScrollView atrasa o estado pressionado; um toque rápido pode terminar antes de ele ser definido.
             boolean click = isEnabled() && event.getX()>=0 && event.getX()<getWidth()
                 && event.getY()>=0 && event.getY()<getHeight();
             MotionEvent cancel = MotionEvent.obtain(event);

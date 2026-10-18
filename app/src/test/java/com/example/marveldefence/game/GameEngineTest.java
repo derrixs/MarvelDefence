@@ -5,8 +5,8 @@ import java.util.Arrays;
 import static org.junit.Assert.*;
 
 public class GameEngineTest {
-    // Existing combat scenarios keep their calibrated synthetic geometry.
-    // They do not validate the artwork or route of the new production map.
+    // Os cenários de combate existentes mantêm sua geometria sintética calibrada.
+    // Eles não validam a arte nem o trajeto do novo mapa de produção.
     private MapData fixtureMap() {
         MapData.Point[] corners = {new MapData.Point(0,215),new MapData.Point(280,215),
             new MapData.Point(280,390),new MapData.Point(525,390),new MapData.Point(525,215),
@@ -110,7 +110,7 @@ public class GameEngineTest {
     @Test public void equivalentTimeStepsProduceEquivalentTravel() {
         GameEngine fine=game(), coarse=game(); fine.startWave(); coarse.startWave();
         advance(fine,4); for(int i=0;i<120;i++) coarse.update(1.0/30);
-        // Spawn tick contributes at most one update of phase; leading enemy is exact.
+        // O instante de surgimento contribui com no máximo uma atualização de fase; o inimigo à frente é exato.
         assertEquals(fine.enemies().get(0).progress(),coarse.enemies().get(0).progress(),.00001);
         assertEquals(fine.wave(),coarse.wave());
     }
@@ -148,7 +148,7 @@ public class GameEngineTest {
     @Test public void lossBlocksUpdatesAndNewGameIsClean() {
         GameEngine game=game(); game.startWave(); advance(game,40); game.startWave(); advance(game,40);
         assertEquals(GameEngine.Status.LOST,game.status()); assertEquals(0,game.lives());
-        // The final escape and end of wave coincide: defeat wins and pays no wave bonus.
+        // A última fuga coincide com o fim da onda: a derrota tem prioridade e não concede bônus.
         assertEquals(1100,game.credits());
         int credits=game.credits(); double time=game.simulationTime();
         advance(game,20); assertEquals(credits,game.credits()); assertEquals(time,game.simulationTime(),.00001);

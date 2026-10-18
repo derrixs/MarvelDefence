@@ -2,7 +2,7 @@ package com.example.marveldefence.ui;
 
 import android.view.Choreographer;
 
-/** One continuous decorative clock per surface; suspended time is never accumulated. */
+/** Um relógio decorativo contínuo por superfície; o tempo em suspensão não é acumulado. */
 final class VisualClock implements Choreographer.FrameCallback {
     interface Listener { void frame(double seconds); }
     private final Listener listener;

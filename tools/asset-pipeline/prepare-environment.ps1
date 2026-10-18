@@ -1,5 +1,5 @@
 param([string]$WaterEdit,[string]$BoatSheet)
-# Preserve original pixels outside the two local water patches. No scene re-render.
+# Preserva os pixels originais fora dos dois trechos de água. Não redesenha o cenário.
 Add-Type -AssemblyName System.Drawing
 $assetRoot = Join-Path $PSScriptRoot '../../app/src/main/res/drawable-nodpi'
 $original = [System.Drawing.Bitmap]::new((Join-Path $assetRoot 'campaign_tower.png'))
@@ -36,7 +36,7 @@ foreach ($xy in $patches) {
 }
 $graphics.Dispose()
 $background.Save((Join-Path $assetRoot 'campaign_tower_environment.png'),[System.Drawing.Imaging.ImageFormat]::Png)
-# Trim alpha in each half of the generated transparent sheet, preserving alpha.
+# Recorta a transparência em cada metade da imagem gerada, preservando o canal alfa.
 $sheet = [System.Drawing.Bitmap]::new($BoatSheet)
 for ($boat=0;$boat -lt 2;$boat++) {
     $left=[int]($sheet.Width*$boat/2); $right=[int]($sheet.Width*($boat+1)/2)

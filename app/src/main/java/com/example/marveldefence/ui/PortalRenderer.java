@@ -7,7 +7,7 @@ import android.graphics.RadialGradient;
 import android.graphics.Shader;
 import com.example.marveldefence.game.MapData;
 
-/** Animated Canvas overlay inside the portal opening; the original map stays intact. */
+/** Animação em Canvas dentro da abertura do portal; o mapa original permanece intacto. */
 public final class PortalRenderer {
     private static final float IMAGE_X = 130, IMAGE_Y = 219;
     private static final float RADIUS_X = 43, RADIUS_Y = 66, TILT = 23;
@@ -44,7 +44,7 @@ public final class PortalRenderer {
         canvas.drawCircle(0,0,1,paint);
         canvas.rotate(degrees);
         paint.setStyle(Paint.Style.STROKE); paint.setShader(ribbon);
-        // Two luminous spiral arms keep the silhouette of a swirling portal.
+        // Duas espirais luminosas mantêm a aparência de um portal girando.
         for (int arm=0;arm<2;arm++) {
             paint.setStrokeWidth(.18f); paint.setAlpha(65);
             canvas.drawPath(spiral,paint);

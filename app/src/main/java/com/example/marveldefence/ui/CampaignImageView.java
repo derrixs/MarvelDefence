@@ -5,7 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import androidx.appcompat.widget.AppCompatImageView;
 
-/** Background and decorations share ImageView's matrix. This adds no touch handling. */
+/** O fundo e os detalhes usam a mesma matriz da ImageView. Esta classe não trata toques. */
 class CampaignImageView extends AppCompatImageView {
     private final EnvironmentRenderer environment;
     private final Paint effectFilter = new Paint();

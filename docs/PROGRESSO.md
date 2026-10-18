@@ -1,5 +1,9 @@
 # Progresso — 04/10/2026
 
+## Comentários do código em português — 18/10/2026
+
+Traduzidos os comentários em inglês dos arquivos Java, testes, recursos XML, configurações Gradle e script de preparação de arte. Nenhuma regra ou recurso do jogo foi alterado. Verificação registrada em VALIDACAO.md.
+
 ## Logo integrada ao app — 07/10/2026
 
 Implementados ícone adaptativo MD (inclusive monocromático) e capa de abertura com a logo completa por até 1,8 s, dispensável por toque ou Voltar. Os recursos antigos de launcher foram substituídos; fluxo do menu preservado. Build debug, lint e 17 testes unitários concluídos sem falhas; lint 0 erros e 9 avisos. APK em app/build/outputs/apk/debug/app-debug.apk. Não houve inspeção visual em aparelho: ADB consultado com permissão e não listou dispositivos.

@@ -43,7 +43,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-/** Navigation and UI commands; all game state is owned by this thread. */
+/** Navegação e comandos da interface; esta thread controla todo o estado do jogo. */
 public class MainActivity extends AppCompatActivity {
     private enum Screen { MENU, BATTLE }
     private Screen screen = Screen.MENU;
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                 } else finish();
             }
         });
-        // Recreated Activity/process starts a fresh session; no misleading save recovery.
+        // Ao recriar a Activity ou o processo, inicia uma sessão nova; não simula recuperação de partida.
         showMenu();
         if (savedInstanceState == null) showOpeningCover();
     }
@@ -321,7 +321,7 @@ public class MainActivity extends AppCompatActivity {
             button.setPadding(0,0,0,0); button.setMinWidth(0); button.setMinimumWidth(0); button.setMinHeight(dp(48));
             button.setCompoundDrawablesWithIntrinsicBounds(heroEmblem(id),0,0,0);
             button.setGravity(Gravity.CENTER); button.setCompoundDrawablePadding(0);
-            // Equal horizontal padding centers the 40 dp emblem in its native touch target.
+            // O espaçamento horizontal simétrico centraliza o emblema de 40 dp na área de toque nativa.
             button.setPadding(dp(8),dp(8),dp(8),dp(8));
             card.addView(button,new LinearLayout.LayoutParams(dp(56),dp(56)));
             button.setOnClickListener(v -> {
@@ -470,7 +470,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateLevelSegments(int id,int level,String bonus) {
         LinearLayout row = findViewById(id);
         if (row.getChildCount()==0) {
-            // First square is the base tier; each remaining square is one purchasable upgrade.
+            // O primeiro quadrado é o nível inicial; cada quadrado restante representa uma melhoria comprável.
             for (int i=0;i<=GameConfig.UPGRADE_LIMIT;i++) {
                 View square = new View(this); square.setBackgroundResource(R.drawable.combat_level_segment);
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(dp(12),dp(12));
@@ -526,7 +526,7 @@ public class MainActivity extends AppCompatActivity {
             try { startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(profile.sourceUrl))); }
             catch (android.content.ActivityNotFoundException unavailable) { toast(R.string.profile_unavailable); }
         });
-        // Inspecting a profile, like the upgrade panel, does not pause the simulation.
+        // Abrir a ficha, assim como o painel de melhorias, não pausa a simulação.
         dialog.show();
     }
     private boolean safeSource(String url) {

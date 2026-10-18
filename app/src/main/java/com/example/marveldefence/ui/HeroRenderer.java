@@ -5,14 +5,14 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import com.example.marveldefence.data.HeroCatalog;
 
-/** Temporary vector characters. Replace this renderer with the user's sprites later. */
+/** Personagens vetoriais provisórios. Substituir este renderizador pelos sprites do usuário futuramente. */
 public final class HeroRenderer {
     private final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final Path shape = new Path();
     public void draw(Canvas c, HeroCatalog.Hero hero, float x, float y, float radius) {
         c.save(); c.translate(x,y); c.scale(radius/24,radius/24);
         color(0x44091928); c.drawOval(-25,20,25,31,paint);
-        // Feet, silhouette and suit.
+        // Pés, silhueta e traje.
         color(0xff0a2637); c.drawRoundRect(-17,12,-3,27,5,5,paint); c.drawRoundRect(3,12,17,27,5,5,paint);
         color(hero.color); c.drawRoundRect(-21,-2,21,20,9,9,paint);
         color(0xff0a2637); c.drawCircle(0,-13,24,paint);

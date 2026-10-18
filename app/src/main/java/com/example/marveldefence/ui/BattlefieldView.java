@@ -15,7 +15,7 @@ import com.example.marveldefence.game.GameEngine;
 import com.example.marveldefence.game.MapData;
 import com.example.marveldefence.game.Viewport;
 
-/** Drawing only: simulation and timing belong to the Activity and pure Java engine. */
+/** Apenas desenha; a simulação e seu tempo pertencem à Activity e ao motor em Java puro. */
 public final class BattlefieldView extends View {
     public interface TouchListener { void touched(double x, double y); }
     private MapData map = new MapData();
@@ -111,7 +111,7 @@ public final class BattlefieldView extends View {
     }
     @Override public boolean performClick() { super.performClick(); return true; }
     private void syncPortalAnimation() {
-        // Visibility callbacks can arrive from View's constructor, before field initialization.
+        // Os callbacks de visibilidade podem chegar durante a construção da View, antes da inicialização dos campos.
         if (visualClock == null) return;
         boolean visible = visualForeground && isAttachedToWindow() && isShown()
             && getWindowVisibility() == VISIBLE && hasWindowFocus();

@@ -21,7 +21,7 @@ import android.widget.LinearLayout;
 
 import com.example.marveldefence.R;
 
-/** Three native image pages. No campaign unlocks or battle state live in this view. */
+/** Três páginas nativas com imagens. Esta View não controla desbloqueios nem o estado da partida. */
 public final class CampaignPager extends HorizontalScrollView {
     public interface SelectionListener { void changed(int region, boolean settled); }
     public static final int REGION_COUNT = 3;
@@ -89,7 +89,7 @@ public final class CampaignPager extends HorizontalScrollView {
                     float scale = Math.max(w/(float)getDrawable().getIntrinsicWidth(),
                         h/(float)getDrawable().getIntrinsicHeight());
                     Matrix matrix = new Matrix(); matrix.setScale(scale,scale);
-                    // Fill uniformly, keeping the campaign plaque at the bottom visible.
+                    // Preenche sem deformar a imagem e mantém visível a placa da campanha na parte inferior.
                     matrix.postTranslate((w-getDrawable().getIntrinsicWidth()*scale)/2,
                         h-getDrawable().getIntrinsicHeight()*scale);
                     setImageMatrix(matrix); post(() -> positionPlatform());
@@ -144,8 +144,8 @@ public final class CampaignPager extends HorizontalScrollView {
     }
 
     @Override protected void onMeasure(int widthMeasureSpec,int heightMeasureSpec) {
-        // Size children BEFORE ScrollView measures them. Changing their params from
-        // onSizeChanged during layout can leave the first frame at the initial 1 px.
+        // Dimensiona as Views filhas ANTES que a ScrollView as meça. Alterar seus parâmetros em
+        // onSizeChanged durante o layout pode deixar o primeiro quadro com a largura inicial de 1 px.
         int measuredPageWidth = Math.max(1,MeasureSpec.getSize(widthMeasureSpec));
         if (pageWidth!=measuredPageWidth) {
             cancelSnap(); gestureActive = false; pageWidth = measuredPageWidth;
@@ -179,7 +179,7 @@ public final class CampaignPager extends HorizontalScrollView {
         if (event.getActionMasked()==MotionEvent.ACTION_UP
                 || event.getActionMasked()==MotionEvent.ACTION_CANCEL) {
             gestureActive = false;
-            // Snap to the nearest region at release; velocity cannot skip regions.
+            // Ao soltar, encaixa na região mais próxima; a velocidade não pode pular regiões.
             int nearest = Math.max(0,Math.min(REGION_COUNT-1,
                 Math.round(getScrollX()/(float)pageWidth)));
             if (gestureMoved || nearest!=selected || getScrollX()!=nearest*pageWidth) snapTo(nearest);
@@ -188,7 +188,7 @@ public final class CampaignPager extends HorizontalScrollView {
         return consumed;
     }
     @Override public void fling(int velocityX) {
-        // dispatchTouchEvent owns settling; suppress the default unbounded fling.
+        // dispatchTouchEvent controla o encaixe; desativa o lançamento padrão sem limite.
     }
     private void snapTo(int region) {
         cancelSnap();
@@ -223,7 +223,7 @@ public final class CampaignPager extends HorizontalScrollView {
     }
     @Override protected void onScrollChanged(int l,int t,int oldl,int oldt) {
         super.onScrollChanged(l,t,oldl,oldt);
-        // HorizontalScrollView may invoke this during its own construction.
+        // HorizontalScrollView pode chamar este método durante sua própria construção.
         if (images!=null) { updatePageAlpha(); positionPlatform(); }
     }
     private void updatePageAlpha() {
@@ -239,7 +239,7 @@ public final class CampaignPager extends HorizontalScrollView {
         if (view==null) return;
         view.setVisibility(region<0 || region>=REGION_COUNT ? View.INVISIBLE : View.VISIBLE);
         if (region<0 || region>=REGION_COUNT) return;
-        // Main pages fill the screen; this is a faded narrow hint of the neighboring region.
+        // As páginas principais preenchem a tela; esta faixa estreita e esmaecida indica a região vizinha.
         view.setImageResource(IMAGES[region]); view.setAlpha(.30f);
         view.setColorFilter(region==0 ? null : lockedFilter);
     }

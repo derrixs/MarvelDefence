@@ -1,10 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Tema base do aplicativo. -->
     <style name="Base.Theme.MarvelDefence" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">#80DCD1</item>
         <item name="android:windowBackground">#091928</item>
         <item name="android:fontFamily">sans</item>
-        <!-- Customize your light theme here. -->
+        <!-- Personalize o tema claro aqui. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 

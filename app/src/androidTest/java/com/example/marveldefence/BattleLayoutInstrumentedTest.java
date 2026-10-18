@@ -25,7 +25,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import static org.junit.Assert.*;
 
-/** Exercises real Android controls and the real engine; captures the rendered device surface. */
+/** Exercita controles Android e o motor reais; captura a tela renderizada no aparelho. */
 @RunWith(AndroidJUnit4.class)
 public class BattleLayoutInstrumentedTest {
     @Test public void improvementsAndSaleRemainVisibleAndPurchasesUpdateRealValues() throws Exception {
@@ -142,7 +142,7 @@ public class BattleLayoutInstrumentedTest {
         for (int line=0;line<text.getLayout().getLineCount();line++) assertEquals(0,text.getLayout().getEllipsisCount(line));
     }
     private static void settle() {
-        // Animated Canvas screens never become fully idle; allow layout and several display frames.
+        // Telas Canvas animadas nunca ficam totalmente ociosas; aguarda o layout e alguns quadros.
         SystemClock.sleep(350);
     }
     private static void capture(String state) throws Exception {

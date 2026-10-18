@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/** Single owner: UI thread. No Android dependency and no network inside the simulation. */
+/** A thread da interface é a única responsável pelo estado. A simulação não depende do Android nem da rede. */
 public final class GameEngine {
     public enum Status { READY, RUNNING, WON, LOST }
     public enum Placement { VALID, OUTSIDE, PATH, TOO_FAR, OBSTACLE, OVERLAP, NOT_IN_TEAM, ALREADY_PLACED, NO_CREDITS, FINISHED }
@@ -147,7 +147,7 @@ public final class GameEngine {
                     && Math.hypot(e.x-unit.x,e.y-unit.y) <= unit.range()) e.health -= unit.damage();
             } else {
                 target.health -= unit.damage();
-                // Same slow refreshes its duration; never stacks its multiplier.
+                // Aplicar lentidão novamente renova a duração, sem acumular o multiplicador.
                 if (unit.hero.attack == HeroCatalog.Attack.SLOW) target.slowRemaining = GameConfig.SLOW_DURATION;
             }
             unit.cooldown = unit.hero.interval;
