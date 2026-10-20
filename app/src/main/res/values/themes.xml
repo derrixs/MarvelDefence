@@ -1,12 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Tema base do aplicativo. -->
-    <style name="Base.Theme.MarvelDefence" parent="Theme.Material3.Dark.NoActionBar">
+    <style
+        name="Base.Theme.MarvelDefence"
+        parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">#80DCD1</item>
         <item name="android:windowBackground">#091928</item>
         <item name="android:fontFamily">sans</item>
         <!-- Personalize o tema claro aqui. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
-
-    <style name="Theme.MarvelDefence" parent="Base.Theme.MarvelDefence" />
+    <style
+        name="Theme.MarvelDefence"
+        parent="Base.Theme.MarvelDefence"/>
 </resources>

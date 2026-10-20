@@ -96,10 +96,19 @@
     <string name="mission_add_symbol">+</string>
     <string name="mission_check_symbol">✓</string>
     <string-array name="mission_hero_symbols">
-        <item>◉</item><item>✶</item><item>✊</item><item>ϟ</item><item>★</item><item>◆</item>
+        <item>◉</item>
+        <item>✶</item>
+        <item>✊</item>
+        <item>ϟ</item>
+        <item>★</item>
+        <item>◆</item>
     </string-array>
     <string-array name="mission_hero_labels">
-        <item>HOMEM DE\nFERRO</item><item>HOMEM-\nARANHA</item><item>HULK</item>
-        <item>THOR</item><item>CAPITÃO\nAMÉRICA</item><item>VIÚVA\nNEGRA</item>
+        <item>HOMEM DE\nFERRO</item>
+        <item>HOMEM-\nARANHA</item>
+        <item>HULK</item>
+        <item>THOR</item>
+        <item>CAPITÃO\nAMÉRICA</item>
+        <item>VIÚVA\nNEGRA</item>
     </string-array>
 </resources>

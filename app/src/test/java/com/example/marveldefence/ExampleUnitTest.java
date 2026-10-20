@@ -1,8 +1,8 @@
 package com.example.marveldefence;
 
-import org.junit.Test;
-
 import static org.junit.Assert.*;
+
+import org.junit.Test;
 
 /**
  * Exemplo de teste unitário local, executado na máquina de desenvolvimento.

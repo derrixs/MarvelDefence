@@ -1,5 +1,9 @@
 # Progresso — 04/10/2026
 
+## Indentação dos arquivos de código — 18/10/2026
+
+Padronizada a indentação em quatro espaços nos 21 arquivos Java, 52 XML de recursos/manifesto e no script PowerShell de preparação de arte. Os arquivos Gradle, TOML, propriedades e Markdown já tinham estrutura de recuo consistente. A formatação separou blocos e atributos compactados; valores e regras do jogo foram preservados. Build debug e testes unitários verificados em VALIDACAO.md.
+
 ## Comentários do código em português — 18/10/2026
 
 Traduzidos os comentários em inglês dos arquivos Java, testes, recursos XML, configurações Gradle e script de preparação de arte. Nenhuma regra ou recurso do jogo foi alterado. Verificação registrada em VALIDACAO.md.

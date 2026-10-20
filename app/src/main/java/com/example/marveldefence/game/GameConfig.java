@@ -9,7 +9,11 @@ public final class GameConfig {
     public static final double SELL_FRACTION = .7, SLOW_FACTOR = .55, SLOW_DURATION = 1.5;
     public static final int[] WAVE_COUNTS = {8, 12, 16, 20, 26};
     public static final double[] SPAWN_INTERVALS = {.85, .7, .6, .5, .42};
-    public static int damageCost(int level) { return 120 + level * 100; }
-    public static int rangeCost(int level) { return 90 + level * 80; }
-    private GameConfig() { }
+    public static int damageCost(int level) {
+        return 120 + level * 100;
+    }
+    public static int rangeCost(int level) {
+        return 90 + level * 80;
+    }
+    private GameConfig() {}
 }

@@ -10,17 +10,24 @@ class CampaignImageView extends AppCompatImageView {
     private final EnvironmentRenderer environment;
     private final Paint effectFilter = new Paint();
     private double seconds;
-    public CampaignImageView(Context context) { this(context,0); }
-    CampaignImageView(Context context,int region) {
-        super(context);
-        environment = new EnvironmentRenderer(getResources(),EnvironmentScene.Kind.values()[region]);
+    public CampaignImageView(Context context) {
+        this(context, 0);
     }
-    void visualTime(double time) { seconds = time; invalidate(); }
-    @Override protected void onDraw(Canvas canvas) {
+    CampaignImageView(Context context, int region) {
+        super(context);
+        environment = new EnvironmentRenderer(getResources(), EnvironmentScene.Kind.values()[region]);
+    }
+    void visualTime(double time) {
+        seconds = time;
+        invalidate();
+    }
+    @Override
+    protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         effectFilter.setColorFilter(getColorFilter());
-        int layer = canvas.saveLayer(0,0,getWidth(),getHeight(),effectFilter);
-        canvas.concat(getImageMatrix()); environment.draw(canvas,seconds);
+        int layer = canvas.saveLayer(0, 0, getWidth(), getHeight(), effectFilter);
+        canvas.concat(getImageMatrix());
+        environment.draw(canvas, seconds);
         canvas.restoreToCount(layer);
     }
 }

@@ -1,5 +1,9 @@
 # Validação
 
+## Indentação dos arquivos de código — 18/10/2026
+
+Verificados os 21 arquivos Java com `clang-format --dry-run --Werror`, sem diferenças de formatação. Os 52 XML foram analisados sintaticamente e comparados com o conteúdo anterior: mesmos elementos, atributos e textos. O script PowerShell passou pela análise sintática. `git diff --check` não apontou erros de espaços. Executado `:app:assembleDebug :app:testDebugUnitTest --offline --no-daemon --console=plain` com JDK 24 local e o fallback JVM do README, fora do sandbox por causa do acesso negado ao cache local do Gradle: BUILD SUCCESSFUL. Relatórios JUnit: 16 testes do motor e 1 teste básico, zero falhas e zero erros. A formatação não foi inspecionada visualmente no aplicativo.
+
 ## Tradução dos comentários — 18/10/2026
 
 O diff foi inspecionado e contém alterações de comentários, além de normalização de quebra de linha ao fim de alguns arquivos; `git diff --check` não apontou erros. O build debug e os testes do motor foram iniciados com o comando offline e o fallback de JVM documentado no README, mas não produziram saída após mais de dois minutos e foram interrompidos. `java -version` também não produziu saída neste ambiente. Portanto, build e testes não estão verificados nesta alteração. As mudanças preexistentes em `.idea` foram preservadas.
