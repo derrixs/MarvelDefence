@@ -1,0 +1,59 @@
+name: Android CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: Compilar, testar e verificar
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Preparar Android SDK
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" \
+            "platforms;android-37.0" "build-tools;36.0.0"
+      - name: Compilar APK, executar testes unitários e lint
+        run: bash ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug --no-daemon --console=plain
+      - uses: actions/upload-artifact@v6
+        with:
+          name: marvel-defence-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+
+  cd:
+    name: Publicar APK no GitHub Releases
+    needs: ci
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v7
+        with:
+          name: marvel-defence-apk
+      - name: Publicar versão de demonstração
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: lab-${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          gh release create "$TAG" app-debug.apk \
+            --target "$GITHUB_SHA" \
+            --title "Marvel Defence ($TAG)" \
+            --notes "APK de demonstração para Android 13 ou superior. Commit: $GITHUB_SHA." \
+            --prerelease
