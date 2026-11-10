@@ -23,7 +23,9 @@ jobs:
           distribution: temurin
           java-version: '25'
       - name: Preparar Android SDK
-        run: sdkmanager "platforms;android-37.0" "build-tools;36.0.0"
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" \
+            "platforms;android-37.0" "build-tools;36.0.0"
       - name: Compilar APK, executar testes unitários e lint
         run: bash ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug --no-daemon --console=plain
       - uses: actions/upload-artifact@v6
